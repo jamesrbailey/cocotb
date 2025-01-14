@@ -68,7 +68,7 @@ int VpiArrayObjHdl::initialise(const std::string &name,
     if (iter != NULL) {
         rangeHdl = vpi_scan(iter);
 
-        for (int i = 1; i < range_idx; ++i) {
+        for (int i = 0; i < range_idx; ++i) {
             rangeHdl = vpi_scan(iter);
             if (rangeHdl == NULL) {
                 break;
